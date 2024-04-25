@@ -313,14 +313,25 @@ namespace AllPawnsMustDieUnitTests
 
                 // Basic opening pawn move "e2e4"
                 Trace.WriteLine("Applying a basic pawn move...e2e4");
-                MoveInformation moveInfo = new MoveInformation(
+                MoveInformation moveInfo1W = new MoveInformation(
                     new BoardSquare(E_FILE, 2), new BoardSquare(E_FILE, 4), false, testBoard.CurrentFEN);
-                testBoard.MovePiece(ref moveInfo);
+                testBoard.MovePiece(ref moveInfo1W);
 
                 Trace.WriteLine("Verify pawn is found at new location...");
                 ChessPiece piece = testBoard.FindPieceAt(E_FILE, 4);
                 Assert.AreEqual(piece.Job, PieceClass.Pawn);
                 Assert.AreEqual(piece.Color, PieceColor.White);
+
+                Trace.WriteLine("Applying a basic pawn move...e7e5");
+                MoveInformation moveInfo1B = new MoveInformation(
+                    new BoardSquare(E_FILE, 7), new BoardSquare(E_FILE, 5), false, testBoard.CurrentFEN);
+                testBoard.MovePiece(ref moveInfo1B);
+
+                Trace.WriteLine("Verify pawn is found at new location...");
+                ChessPiece piece2 = testBoard.FindPieceAt(E_FILE, 5);
+                Assert.AreEqual(piece2.Job, PieceClass.Pawn);
+                Assert.AreEqual(piece2.Color, PieceColor.Black);
+
             }
 
             /// <summary>
@@ -798,6 +809,11 @@ namespace AllPawnsMustDieUnitTests
                 ChessPiece piece = testBoard.FindPieceAt(E_FILE, 4);
                 Assert.AreEqual(piece.Job, PieceClass.Pawn);
                 Assert.AreEqual(piece.Color, PieceColor.White);
+
+               // Trace.WriteLine("Applying a basic pawn move...e7e5");
+              //  testBoard.MovePiece(ref moveInfo);
+              //  Assert.AreEqual(piece.Job, PieceClass.Pawn);
+              //  Assert.AreEqual(piece.Color, PieceColor.Black);
 
                 // Now revert it
                 Trace.WriteLine("Reverting the move...");

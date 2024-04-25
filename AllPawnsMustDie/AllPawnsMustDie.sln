@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.12
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllPawnsMustDie", "AllPawnsMustDie.csproj", "{3F41659D-9F15-4F76-9A12-4599C201C213}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllPawnsMustDieUnitTests", "..\AllPawnsMustDieUnitTests\AllPawnsMustDieUnitTests.csproj", "{B99C963A-CF92-4200-943B-7102007A41E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xUnitDataStructuresDemo", "..\xUnitStandAloneDemo\xUnitDataStructuresDemo.csproj", "{B13314C3-0C35-4D61-8839-4EB5F0283CA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +23,15 @@ Global
 		{B99C963A-CF92-4200-943B-7102007A41E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B99C963A-CF92-4200-943B-7102007A41E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B99C963A-CF92-4200-943B-7102007A41E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B13314C3-0C35-4D61-8839-4EB5F0283CA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B13314C3-0C35-4D61-8839-4EB5F0283CA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B13314C3-0C35-4D61-8839-4EB5F0283CA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B13314C3-0C35-4D61-8839-4EB5F0283CA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5BC0E91C-66C9-4C6E-B1BC-FDF5D32C878F}
 	EndGlobalSection
 EndGlobal

@@ -85,13 +85,15 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem1,
             this.editToolStripMenuItem,
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(406, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(702, 33);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -105,46 +107,46 @@
             this.toolStripSeparator2,
             this.exitToolStripExit});
             this.fileToolStripMenuItem1.Name = "fileToolStripMenuItem1";
-            this.fileToolStripMenuItem1.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem1.Size = new System.Drawing.Size(54, 29);
             this.fileToolStripMenuItem1.Text = global::AllPawnsMustDie.Properties.Resources.MenuFile;
             // 
             // newGameToolStripNewGame
             // 
             this.newGameToolStripNewGame.Name = "newGameToolStripNewGame";
-            this.newGameToolStripNewGame.Size = new System.Drawing.Size(153, 22);
+            this.newGameToolStripNewGame.Size = new System.Drawing.Size(229, 34);
             this.newGameToolStripNewGame.Text = global::AllPawnsMustDie.Properties.Resources.MenuFileNewGame;
             this.newGameToolStripNewGame.Click += new System.EventHandler(this.newGameToolStripNewGame_Click);
             // 
             // selfPlayToolStripSelfPlay
             // 
             this.selfPlayToolStripSelfPlay.Name = "selfPlayToolStripSelfPlay";
-            this.selfPlayToolStripSelfPlay.Size = new System.Drawing.Size(153, 22);
+            this.selfPlayToolStripSelfPlay.Size = new System.Drawing.Size(229, 34);
             this.selfPlayToolStripSelfPlay.Text = global::AllPawnsMustDie.Properties.Resources.MenuFileSelfPlay;
             this.selfPlayToolStripSelfPlay.Click += new System.EventHandler(this.selfPlayToolStripSelfPlay_Click);
             // 
             // newPositionToolStripNewPosition
             // 
             this.newPositionToolStripNewPosition.Name = "newPositionToolStripNewPosition";
-            this.newPositionToolStripNewPosition.Size = new System.Drawing.Size(153, 22);
+            this.newPositionToolStripNewPosition.Size = new System.Drawing.Size(229, 34);
             this.newPositionToolStripNewPosition.Text = global::AllPawnsMustDie.Properties.Resources.MenuFileNewPosition;
             this.newPositionToolStripNewPosition.Click += new System.EventHandler(this.newPositionToolStripNewPosition_Click);
             // 
             // loadEngineToolStripLoadEngine
             // 
             this.loadEngineToolStripLoadEngine.Name = "loadEngineToolStripLoadEngine";
-            this.loadEngineToolStripLoadEngine.Size = new System.Drawing.Size(153, 22);
+            this.loadEngineToolStripLoadEngine.Size = new System.Drawing.Size(229, 34);
             this.loadEngineToolStripLoadEngine.Text = global::AllPawnsMustDie.Properties.Resources.MenuFileLoadEngine;
             this.loadEngineToolStripLoadEngine.Click += new System.EventHandler(this.loadEngineToolStripLoadEngine_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(150, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(226, 6);
             // 
             // exitToolStripExit
             // 
             this.exitToolStripExit.Name = "exitToolStripExit";
-            this.exitToolStripExit.Size = new System.Drawing.Size(153, 22);
+            this.exitToolStripExit.Size = new System.Drawing.Size(229, 34);
             this.exitToolStripExit.Text = global::AllPawnsMustDie.Properties.Resources.MenuFileExit;
             this.exitToolStripExit.Click += new System.EventHandler(this.exitToolStripExit_Click);
             // 
@@ -155,13 +157,13 @@
             this.UndoLastMoveToolStripMenuItemUndoLastMove,
             this.optionsToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(58, 29);
             this.editToolStripMenuItem.Text = global::AllPawnsMustDie.Properties.Resources.MenuEdit;
             // 
             // showFENToolStripMenuItem
             // 
             this.showFENToolStripMenuItem.Name = "showFENToolStripMenuItem";
-            this.showFENToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.showFENToolStripMenuItem.Size = new System.Drawing.Size(301, 34);
             this.showFENToolStripMenuItem.Text = global::AllPawnsMustDie.Properties.Resources.MenuEditShowFen;
             this.showFENToolStripMenuItem.Click += new System.EventHandler(this.showFENToolStripMenuItem_Click);
             // 
@@ -169,14 +171,14 @@
             // 
             this.UndoLastMoveToolStripMenuItemUndoLastMove.Name = "UndoLastMoveToolStripMenuItemUndoLastMove";
             this.UndoLastMoveToolStripMenuItemUndoLastMove.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.UndoLastMoveToolStripMenuItemUndoLastMove.Size = new System.Drawing.Size(198, 22);
+            this.UndoLastMoveToolStripMenuItemUndoLastMove.Size = new System.Drawing.Size(301, 34);
             this.UndoLastMoveToolStripMenuItemUndoLastMove.Text = global::AllPawnsMustDie.Properties.Resources.MenuEditUndo;
             this.UndoLastMoveToolStripMenuItemUndoLastMove.Click += new System.EventHandler(this.UndoLastMoveToolStripMenuItemUndoLastMove_Click);
             // 
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(301, 34);
             this.optionsToolStripMenuItem.Text = global::AllPawnsMustDie.Properties.Resources.MenuEditOptions;
             this.optionsToolStripMenuItem.Click += new System.EventHandler(this.optionsToolStripMenuItem_Click);
             // 
@@ -185,13 +187,13 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(65, 29);
             this.helpToolStripMenuItem.Text = global::AllPawnsMustDie.Properties.Resources.MenuHelp;
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(164, 34);
             this.aboutToolStripMenuItem.Text = global::AllPawnsMustDie.Properties.Resources.MenuHelpAbout;
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -201,7 +203,7 @@
             this.labelVerbose.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelVerbose.Location = new System.Drawing.Point(12, 24);
             this.labelVerbose.Name = "labelVerbose";
-            this.labelVerbose.Size = new System.Drawing.Size(0, 21);
+            this.labelVerbose.Size = new System.Drawing.Size(0, 32);
             this.labelVerbose.TabIndex = 1;
             // 
             // textBoxMoveHistory
@@ -220,7 +222,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(406, 195);
+            this.ClientSize = new System.Drawing.Size(702, 195);
             this.Controls.Add(this.textBoxMoveHistory);
             this.Controls.Add(this.labelVerbose);
             this.Controls.Add(this.menuStrip1);
