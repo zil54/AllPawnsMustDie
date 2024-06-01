@@ -90,12 +90,11 @@ namespace xUnitDataStructuresDemo
             }
 
             [Fact]
-            public void PrintDLList()
+        
+            public void TestPrintDLList()
             {
                 // Arrange
                 var list = new DoublyLinkedList<int>();
-
-                // Act
                 list.AddLast(1);
                 list.AddLast(4);
                 list.AddLast(6);
@@ -105,24 +104,20 @@ namespace xUnitDataStructuresDemo
                 list.AddLast(23);
                 list.AddLast(56);
                 list.AddLast(78);
+
+                var expectedOutput = "1 <--> 4 <--> 6 <--> 7 <--> 8 <--> 9 <--> 23 <--> 56 <--> 78"; // Replace with the expected output
+
+                var stringWriter = new StringWriter();
+                stringWriter.GetStringBuilder().Clear();
+                Console.SetOut(stringWriter);
+
+                // Act
                 list.PrintDLList();
 
                 // Assert
-                using (var sw = new StringWriter())
-                {
-                    Console.SetOut(sw);
-
-                    // Act
-                    list.PrintDLList();
-
-                    // Assert
-                    var result = sw.ToString().Trim();
-                    var expected = "<--> 56";
-                    Assert.Contains(expected, result);
-
-                    // Output the result to the test runner
-                    output.WriteLine(result);
-                }
+                var actualOutput = stringWriter.ToString().Trim();
+                Assert.Equal(expectedOutput, actualOutput);
+                stringWriter.GetStringBuilder().Clear();
             }
 
             // Additional tests for other methods and edge cases can be added here.
